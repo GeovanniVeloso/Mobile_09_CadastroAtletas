@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mobile_09_CadastroAtletas</string>
+    <string name="name">Nome</string>
+    <string name="address">Bairro</string>
+    <string name="birthDate">Data de Nascimento</string>
+    <string name="competitionTime">Tempo que Compete</string>
+    <string name="cardiac">É cardíaco?</string>
+    <string name="Y">Sou cardíaco</string>
+    <string name="N">Não sou cardíaco</string>
+    <string name="gym">Academia</string>
+    <string name="record">Tempo Recorde</string>
+    <string name="register">Cadastrar</string>
+    <string name="r01">Atleta Junior</string>
+    <string name="r02">Atleta Pleno</string>
+    <string name="r03">Atleta Senior</string>
+</resources>
