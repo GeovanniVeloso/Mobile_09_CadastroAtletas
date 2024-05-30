@@ -1,20 +1,16 @@
 package com.example.mobile_09_cadastroatletas;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mobile_09_cadastroatletas.model.AtletaJunior;
 
@@ -53,40 +49,12 @@ public class AtletaJuniorFragment extends Fragment {
         String address = etAddressAJ.getText().toString();
         int time = Integer.parseInt(etTimeAJ.getText().toString());
 
-        AtletaJunior aj = new AtletaJunior();
-        aj.setName(name);
-        aj.setBirthDate(birth);
-        aj.setAddress(address);
-        aj.setCompetitionAge(time);
-    }
+        AtletaJunior Atleta = new AtletaJunior();
+        Atleta.setName(name);
+        Atleta.setBirthDate(birth);
+        Atleta.setAddress(address);
+        Atleta.setCompetitionAge(time);
 
-    /*@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
-        return true;
+        Toast.makeText(view.getContext(), Atleta.toString(), Toast.LENGTH_LONG).show();
     }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if(id == R.id.item_01){
-            Intent i = new Intent(this, AtletaJuniorFragment.class);
-            this.startActivity(i);
-            this.finish();
-            return true;
-        }
-        if(id == R.id.item_02){
-            Intent i = new Intent(this, MainActivity.class);
-            this.startActivity(i);
-            this.finish();
-            return true;
-        }
-        if(id == R.id.item_03){
-            Intent i = new Intent(this, AtletaSeniorFragment.class);
-            this.startActivity(i);
-            this.finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }*/
 }

@@ -27,7 +27,7 @@
         android:hint="@string/name"
         android:importantForAutofill="no"
         android:inputType="text"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/tvResAJ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:hint="@string/address"
         android:importantForAutofill="no"
         android:inputType="text"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="@+id/etBirthAJ"
         app:layout_constraintTop_toBottomOf="@+id/etBirthAJ" />
 
@@ -55,7 +55,7 @@
         android:hint="@string/birthDate"
         android:importantForAutofill="no"
         android:inputType="text"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="@+id/etNameAJ"
         app:layout_constraintTop_toBottomOf="@+id/etNameAJ" />
 
@@ -68,7 +68,7 @@
         android:hint="@string/competitionTime"
         android:importantForAutofill="no"
         android:inputType="number"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="@+id/etAddressAJ"
         app:layout_constraintTop_toBottomOf="@+id/etAddressAJ" />
 

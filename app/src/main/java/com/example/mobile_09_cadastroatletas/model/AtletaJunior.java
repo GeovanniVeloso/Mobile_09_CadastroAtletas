@@ -20,9 +20,4 @@ public class AtletaJunior extends Atleta{
         return "Nome = "+getName()+", Data de Nascimento = "+getBirthDate()+" Bairro = "+getAddress()+
                 "Anos competindo = " + competitionAge;
     }
-    /*"Atleta{" +
-            "name='" + name + '\'' +
-            ", birthDate='" + birthDate + '\'' +
-            ", address='" + address + '\'' +
-            '}';*/
 }

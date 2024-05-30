@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtletaPlenoFragment">
+
+    <EditText
+        android:id="@+id/etAddressAJ"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/address"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/etGymAP"
+        app:layout_constraintStart_toStartOf="@+id/etBirthAJ"
+        app:layout_constraintTop_toBottomOf="@+id/etBirthAJ" />
+
+    <EditText
+        android:id="@+id/etBirthAJ"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="@string/birthDate"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/etAddressAJ"
+        app:layout_constraintStart_toStartOf="@+id/etNameAJ"
+        app:layout_constraintTop_toBottomOf="@+id/etNameAJ" />
+
+    <EditText
+        android:id="@+id/etNameAJ"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/etBirthAJ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etGymAP"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/gym"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/etRecordAP"
+        app:layout_constraintEnd_toEndOf="@+id/etRecordAP"
+        app:layout_constraintTop_toBottomOf="@+id/etAddressAJ" />
+
+    <EditText
+        android:id="@+id/etRecordAP"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="@string/record"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/btCalcAP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGymAP" />
+
+    <Button
+        android:id="@+id/btCalcAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRecordAP" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

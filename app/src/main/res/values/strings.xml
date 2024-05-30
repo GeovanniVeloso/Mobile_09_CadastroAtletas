@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mobile_09_CadastroAtletas</string>
+    <string name="app_name">CadastroAtletas</string>
     <string name="name">Nome</string>
     <string name="address">Bairro</string>
     <string name="birthDate">Data de Nascimento</string>
